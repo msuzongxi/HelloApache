@@ -1,3 +1,14 @@
 <html>
 <div>Hello Apache</div>
+<div><img src="/images/sgf-logo.svg"/></div>
 </html>
+
+1. http://ip/hello
+2. apache server process the request
+3. apache server proxy the request to http://ip:8080/hello
+4. spring boot app processes the request 
+5. spring boot app responds with hello-form.html
+6. browser receive the response
+7. browser to make a request to the http://ip/images/sgf-logo.svg
+8. apache server prcess the image request
+9. apache server serves the image response to the browser
